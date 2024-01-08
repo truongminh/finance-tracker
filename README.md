@@ -41,6 +41,19 @@ bundle add sassc-rails # support scss
 ## Add form
 - `form_tag <url>, options ... `
 
+## Enable AJAX
+https://guides.rubyonrails.org/v6.1/working_with_javascript_in_rails.html
+- Enable `rails-ujs`
+`./bin/importmap pin @rails/ujs`
+
+```js
+// application.js
+import Rails from '@rails/ujs';
+
+Rails.start();
+```
+- Set form `remote: true` 
+
 ## Style
 - Tab is 2 spaces
 
