@@ -6,6 +6,9 @@
 - `rails generate devise:install`
 - `rails generate devise User`
 
+## Generate controller
+- `rails generate controller <class> <method>`
+
 ## Library
 - Authentication: `bundle add devise`
 - Bootstrap: 
@@ -33,11 +36,13 @@ bundle add sassc-rails # support scss
 
 ## Credentials
 - `EDITOR="code --wait" rails credentials:edit` 
-- `Rails.application.credentials.<key>`
+- `Rails.application.credentials.<key>
+
+## Add form
+- `form_tag <url>, options ... `
 
 ## Style
 - Tab is 2 spaces
-
 
 ## Debug
 - Empty rendering: add the = character, check for <%= 

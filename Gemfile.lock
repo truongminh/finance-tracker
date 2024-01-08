@@ -127,6 +127,8 @@ GEM
     faraday-net_http (3.0.2)
     ffi (1.16.3)
     ffi (1.16.3-x64-mingw-ucrt)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashie (5.0.0)
@@ -299,6 +301,7 @@ DEPENDENCIES
   devise
   devise-bootstrap-views (~> 1.1)
   devise-i18n (~> 1.12)
+  font-awesome-rails (~> 4.7)
   iex-ruby-client (~> 2.1)
   importmap-rails
   jbuilder

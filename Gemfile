@@ -75,3 +75,5 @@ gem "devise-bootstrap-views", "~> 1.1"
 gem "devise-i18n", "~> 1.12"
 
 gem "iex-ruby-client", "~> 2.1"
+
+gem "font-awesome-rails", "~> 4.7"

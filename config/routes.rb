@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/my_portfolio'
   devise_for :users
   get 'welcome/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -9,4 +10,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "welcome#index"
+
+  get "my_portfolio", to: "users#my_portfolio"
+  get "search_stock", to: "stocks#search"
 end
