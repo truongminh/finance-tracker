@@ -4,14 +4,16 @@ class StocksController < ApplicationController
     if ticker.present? && ticker.length > 0
       @stock = Stock.new_lookup(ticker)
       if @stock
-        respond_to do |format|
-          format.html { render partial: "users/result" }
-          format.js { render partial: "users/result"}
-        end
+
       else
-        flash[:notice] = "Stock " + ticker + " not found"
+        flash.now[:alert] = "Stock " + ticker + " not found"
       end
+    else
+      flash.now[:notice] = "Please enter a symbol"
     end
-    # render template: "users/my_portfolio"
+
+    respond_to do |format|
+      format.js { render partial: "users/result"}
+    end
   end
 end
