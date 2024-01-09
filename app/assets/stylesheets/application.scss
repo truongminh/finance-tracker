@@ -17,15 +17,14 @@
 
 @import "bootstrap";
 
-.navbar-brand {
-    font-size: 3rem;
-}
-
 .search-area {
     margin-top: 50px;
 }
 
-.result-block {
-    padding-top: 20px;
-    display: inline-block;
+#result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .result-block {
+        display: inline-block;
+    }
 }

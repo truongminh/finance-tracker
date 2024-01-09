@@ -33,6 +33,8 @@ bundle add sassc-rails # support scss
 - Add Stock model
 `rails g model Stock ticker:string name:string price:decimal`
 `rails db:migrate`
+- Add model with references
+`rails g resource UserStock user:references stock:references`
 
 ## Credentials
 - `EDITOR="code --wait" rails credentials:edit` 
@@ -40,6 +42,7 @@ bundle add sassc-rails # support scss
 
 ## Add form
 - `form_tag <url>, options ... `
+- Form method: `data: { turbo_method: :delete }`
 
 ## Enable AJAX
 https://guides.rubyonrails.org/v6.1/working_with_javascript_in_rails.html
@@ -57,6 +60,11 @@ Rails.start();
 ## Style
 - Tab is 2 spaces
 
+## Syntax
+- String interpolation: `Stock #{stock.ticker}`
+- `return true if check(stock)`
+- `return false unless stock stocks.where(id: stock.id).exists?`
+
 ## Debug
 - Empty rendering: add the = character, check for <%= 
-
+- List routes: `rails routes --expanded`
