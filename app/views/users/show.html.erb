@@ -1,0 +1,11 @@
+<h2> User </h2>
+
+Name: <%= @user.full_name %>
+Email: <%= @user.email %>
+<% if current_user.is_friend_with?(@user.id) %>
+<span class="badge bg-secondary"> You are already friend</span>
+<% else %>
+<%= link_to "Follow", friendships_path(friend: @user), method: :post, class: "btn btn-xs btn-success" %>
+<% end %>
+
+<%= render "stocks/list" %>

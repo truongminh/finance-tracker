@@ -68,3 +68,4 @@ Rails.start();
 ## Debug
 - Empty rendering: add the = character, check for <%= 
 - List routes: `rails routes --expanded`
+- Mind the `s` in controller filename and class name
